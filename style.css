@@ -103,31 +103,29 @@ h1{
   margin: 0 0 10px;
   font-size: 14px;
 }
-/* Mejor tamaño del input */
-.searchRow input{
-  height: 52px;
-  padding: 0 16px;
-  font-size: 16px;
-  border-radius: 16px;
+
+
+.searchRow{
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
 
-/* En celular: input grande y botón no tan ancho */
-@media (max-width: 480px){
+/* IMPORTANTÍSIMO: evita que el input empuje el botón */
+.searchRow input{
+  flex: 1;
+  min-width: 0;
+}
 
+/* En celular: input arriba, botón abajo */
+@media (max-width: 480px){
   .searchRow{
     flex-direction: column;
     align-items: stretch;
   }
 
-  .searchRow input{
-    height: 56px;
-    font-size: 16px;
-  }
-
   .searchRow .btn{
-    width: auto;           /* ya no ocupa todo */
-    align-self: flex-end;  /* queda a la derecha */
-    padding: 0 18px;
+    width: 100%;
   }
 }
 
