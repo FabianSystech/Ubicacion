@@ -103,7 +103,6 @@ h1{
   margin: 0 0 10px;
   font-size: 14px;
 }
-
 /* Mejor tamaño del input */
 .searchRow input{
   height: 52px;
@@ -131,6 +130,7 @@ h1{
     padding: 0 18px;
   }
 }
+
 
 input[type="search"]{
   flex:1;
