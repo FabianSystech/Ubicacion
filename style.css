@@ -149,8 +149,8 @@ input[type="search"]:focus{
 }
 
 .btn{
-  height: 48px;
-  border-radius: 16px;
+  height: 43px;
+  border-radius: 14px;
   border: 1px solid rgba(109,40,217,.25);
   background: linear-gradient(180deg, rgba(109,40,217,.10), rgba(109,40,217,.06));
   color:#2c1b4a;
@@ -159,12 +159,13 @@ input[type="search"]:focus{
   cursor:pointer;
 }
 
-.btn:active{ transform: translateY(1px); }
-
-.hint{
-  margin: 10px 0 0;
-  text-align:left;
-  color: var(--muted);
+input[type="search"]{
+  flex:1;
+  height: 48px;
+  border-radius: 16px;
+  border: 1px solid rgba(109,40,217,.20);
+  outline: none;
+  padding: 0 14px;uted);
   font-size: 13px;
 }
 
